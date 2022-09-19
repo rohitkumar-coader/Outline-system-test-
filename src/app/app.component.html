@@ -4,15 +4,25 @@
 <app-child></app-child>
 
 <div class="d-block my-3">
+  <div class="custom-control custom-radio">
+    <input
+      id="button1"
+      type="radio"
+      class="custom-control-input"
+      value="button1"
+      ngModel
+    />
+    <label class="custom-control-label" for="button1">Radio Button1</label>
+  </div>
 
-<div class="custom-control custom-radio">
-  <input  type="radio" class="custom-control-input" value="male" name="gender" ngModel required>
-  <label class="custom-control-label" for="radio">Radio Button1</label>
-</div>
-  
-<div class="custom-control custom-radio">
-  <input  type="radio" class="custom-control-input" value="female" name="gender" ngModel required>
-  <label class="custom-control-label" for="radio1">Radio Buttion2</label>
-</div>
-
+  <div class="custom-control custom-radio">
+    <input
+      id="button2"
+      type="radio"
+      class="custom-control-input"
+      value="button2"
+      ngModel
+    />
+    <label class="custom-control-label" for="button2">Radio Buttion2</label>
+  </div>
 </div>
