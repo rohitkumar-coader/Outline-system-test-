@@ -10,9 +10,7 @@ export class AppComponent {
   data: any;
   constructor(private _bs: BehaviorService) {
     this._bs.transferReturn().subscribe((res: any) => {
-      console.log(res);
       this.data = res;
-      // alert(res);
     });
   }
   money: any;

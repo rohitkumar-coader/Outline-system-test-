@@ -23,14 +23,11 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this._bs.transferReturn().subscribe((res: any) => {
-        console.log(res);
         this.data = res;
-        // alert(res);
       });
     }, 50);
   }
   @Output() childEvent = new EventEmitter();
-
   getMoney() {
     this.data.money1 += 5;
   }

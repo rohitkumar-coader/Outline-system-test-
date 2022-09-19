@@ -17,9 +17,7 @@ export class ParentComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this._bs.transferReturn().subscribe((res: any) => {
-        console.log(res);
         this.data = res;
-        // alert(res);
       });
     }, 50);
     setInterval(() => {
