@@ -13,5 +13,4 @@ export class AppComponent {
       this.data = res;
     });
   }
-  money: any;
 }
